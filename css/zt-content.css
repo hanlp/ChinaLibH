@@ -1,0 +1,213 @@
+.mainzt{
+	width: 100%;
+}
+.mainzt .mainzt-header{
+	background: #fff;
+	border-bottom: solid 1px #666;
+}
+.mainzt .mainzt-header{
+	background:url('../images/fwzwhyc-bg.png') no-repeat center bottom #fff;
+	padding-top: 100px;
+	text-align: center;
+}
+.mainzt .mainzt-header.tsggkk{
+	background:url('../images/tsggkk-bg.png') no-repeat center bottom #fff;
+}
+
+.mainzt .mainzt-header.history{
+	background:url('../images/history-bg.png') no-repeat center bottom #fff;
+}
+.mainzt .mainzt-header.mingsu{
+	background:url('../images/mingsu-bg.png') no-repeat center bottom #fff;
+}
+.mainzt .mainzt-header.zggd{
+	background:url('../images/zggd-bg.png') no-repeat center bottom #fff;
+}
+
+
+
+
+.mainzt .mainzt-header a{
+	color: #204d82;
+	font-size: 16px;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.mainzt .mainzt-header a:last-child{
+	margin-right: 0;
+}
+
+.mainzt .mainzt-header a.on{
+	color: #fff;
+	background: #204d82;
+}
+.histoty-content,
+.mainzt-content,
+.zgnh-content{
+	position: relative;
+	background: url('../images/zt-bj-right.png') no-repeat right top;
+	background-size: 200px;
+}
+.zgnh-content:before,
+.histoty-content:before,
+.mainzt-content:before{
+	content: url('../images/zt-bj-left.png');
+	width: 200px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.zgnh-content>ul,
+.histoty-content>ul,
+.mainzt-content>ul{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.mainzt-content>ul>li{
+	float: left;
+	display: inline-block;
+	width: 16%;
+	margin-right: 5%;
+	text-align: center;
+	margin-top: 40px;
+}
+.mainzt-content>ul>li:nth-child(5n){
+	margin-right: 0;
+}
+.histoty-content>ul>li{
+	float: left;
+	display: inline-block;
+	width: 30%;
+	margin-right: 5%;
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+}
+.histoty-content>ul>li:nth-child(3n){
+	margin-right: 0;
+}
+.histoty-content>ul>li img{
+	width: 100%;
+}
+.histoty-content>ul>li span{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+.zgnh-content>ul>li{
+	float: left;
+	display: inline-block;
+	width: 20%;
+	margin-right: 5%;
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+	min-height: 419px;
+}
+.zgnh-content>ul>li:nth-child(4n){
+	margin-right: 0;
+}
+.zgnh-content>ul>li span{
+	position: absolute;
+	display: inline-block;
+	width: 90%;
+	top: 10px;
+	left: 10px;
+	color: #4c6eab;
+	font-size: 14px;
+}
+.zgnh-content>ul>li p{
+	color: #758cb5;
+	font-size: 22px;
+}
+
+.zgnh-content>ul>li span.wx-span{
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	font-size: 22px;
+}
+.zgnh-content>ul>li p.wx-p{
+	color: #758cb5;
+	font-size: 18px;
+}
+
+.zgnh-content>ul>li img{
+	width: 100%;
+}
+.mainzt-content .item-img{
+	position: relative;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	overflow: hidden;
+	border: solid 2px #a2b7db;
+	font-size: 0;
+}
+.mainzt-content .item-img.no-border{
+	border: none;
+}
+.mainzt-content .item-img img{
+	width: 100%;
+}
+.mainzt-content .item-img span{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+.mainzt-content .item-img span.blue{
+	color: #a2b7db;
+}
+.mainzt-content .item-text{
+	padding-top: 10px;
+}
+.mainzt-content .item-text a{
+	color: #758cb5;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.pagebox{
+	margin-top: 68px;
+}
+.pagebox li{
+	background: #fff;
+	width: auto;
+	padding: 0 10px;
+	border:solid 1px #e7ecf0;
+}
+.pagebox li.prev,
+.pagebox li.next{
+	border:solid 1px #e7ecf0;
+}
+.pagebox li:last-child,
+.pagebox li.text{
+	background: none;
+	border: none;
+}
+.pagebox li:last-child a{
+	background: #a0a0a0;
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 10px;
+}

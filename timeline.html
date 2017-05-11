@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时间轴</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/timeline.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<header class="header">
+        <div class="head clearfix">
+            <div class="logo">
+                <img src="images/logo.png" width="148">
+            </div>
+            <div class="logo">
+                <img src="images/head-content.png" width="209">
+            </div>
+            <div class="logo">
+                <img src="images/logo-arab.png" width="146">
+            </div>
+        </div>
+        <div class="language">
+            <ul class="clearfix">
+                <li class="on"><a href="">中</a></li>
+                <li><a href="">الصينية</a></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="index.html">首页丨 الصفحة الرئيسية</a></li>
+                <li class="on"><a href="timeline.html">时间轴丨 الخط الزمني</a></li>
+                <li><a href="#">地图丨 الخريطة</a></li>
+                <li><a href="zt.html">专题丨 الموضوعات الخاصة</a></li>
+                <li><a href="news-list.html">图书馆新闻丨 أخبار المكتبة</a></li>
+                <li><a href="#">成员图书馆网址丨 المواقع الإ</a></li>
+            </ul>
+        </div>
+    </header>
+	<section>
+        <div class="time-title">
+            <img src="images/icon_biaoqian.png" alt="">
+            <span>时间轴</span>
+        </div>
+		<div id="timeline"></div>
+		<footer>
+            <div class="nav-footer">
+                <ul class="clearfix">
+                    <li><a href="">项目介绍 丨 التعريف بالمشروع</a></li>
+                    <li><a href="">关于我们 丨 تعرف بنا </a></li>
+                    <li><a href="">外部网址 丨 المواقع الخارجية ذات الصلة</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span>京ICP备05014420号 </span>
+                <span>中国国家图书馆版权所有 丨 © جميع الحقوق محفوظة لدى المكتبة الوطنية الصينية</span>
+            </div>
+        </footer>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/timeline-min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var timeline = new VMM.Timeline();
+			timeline.init("js/timeline.json");
+		});
+	</script>
+</body>
+</html>

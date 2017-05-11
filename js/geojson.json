@@ -1,0 +1,277 @@
+var data = { "features": [
+  
+        {
+            "geometry": {
+                "coordinates": [
+                    116.39722999999996,
+                    39.9075
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 6,
+                "items": [
+                    [
+                        3044,
+                        "黄帝内经素问"
+                    ],
+                    [
+                        11386,
+                        "山海永平薊州密云古北口黄花镇等处地方里路图本"
+                    ],
+                    [
+                        11435,
+                        "皇明职方地图"
+                    ],
+                    [
+                        4677,
+                        "太上混元上德皇帝犹龙传"
+                    ],
+                    [
+                        2378,
+                        "古代蒙古和鞑靼人的第一个皇帝—伟大的成吉思汗史"
+                    ],
+                    [
+                        11379,
+                        "礼记单注本"
+                    ]
+                ],
+                "name": "中国",
+                "query": "?regions=east-asia&countries=CN"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    116.39722999999996,
+                    39.9075
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 4,
+                "items": [
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ],
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ],
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ],
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ],
+                ],
+                "name": "北京",
+                "query": "?regions=east-asia&countries=CN&provinces=beijing"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    113.99999998413115,
+                    33.99999999582342
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        7098,
+                        "东都事略"
+                    ]
+                ],
+                "name": "河南省",
+                "query": "?regions=east-asia&countries=CN&provinces=henan-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    114.27342,
+                    23.16244
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        3045,
+                        "熹平石经"
+                    ]
+                ],
+                "name": "香港",
+                "query": "?regions=east-asia&countries=CN&provinces=henan-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    119.99999998329596,
+                    32.99999999591491
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ]
+                ],
+                "name": "江苏省",
+                "query": "?regions=east-asia&countries=CN&provinces=jiangsu-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    118.77778,
+                    32.06167
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        7087,
+                        "英杰归真"
+                    ]
+                ],
+                "name": "南京",
+                "query": "?regions=east-asia&countries=CN&provinces=jiangsu-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    119.52526999999998,
+                    32.73197999999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        4443,
+                        "扬州府图说"
+                    ]
+                ],
+                "name": "江苏省",
+                "query": "?regions=east-asia&countries=CN&provinces=jiangsu-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    108.92861000000002,
+                    34.25832999999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        3051,
+                        "金刚般若波罗蜜经"
+                    ]
+                ],
+                "name": "西安",
+                "query": "?regions=east-asia&countries=CN&provinces=shaanxi-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    118.99999998343515,
+                    35.999999995649304
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        7097,
+                        "江苏至北京运河全图"
+                    ]
+                ],
+                "name": "山东省",
+                "query": "?regions=east-asia&countries=CN&provinces=shandong-province"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    90.0,
+                    32.0
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        8943,
+                        "跟随佛陀，远离所有罪孽，走向高贵、伟大和洗去污秽的救赎"
+                    ]
+                ],
+                "name": "西藏",
+                "query": "?regions=east-asia&countries=CN&provinces=tibet"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.71667,
+                    27.31667
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "itemCount": 1,
+                "items": [
+                    [
+                        4733,
+                        "云南昭通镇四营制"
+                    ]
+                ],
+                "name": "云南省",
+                "query": "?regions=east-asia&countries=CN&provinces=yunnan-province"
+            },
+            "type": "Feature"
+        }
+      
+    ],
+    "meta": {
+        "limit": 500,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "search_base_url": "https://www.wdl.org/zh/search/",
+        "total_count": 114
+    },
+    "type": "FeatureCollection"
+}

@@ -1,0 +1,34 @@
+.article{
+	padding: 0 50px 80px 50px;
+}
+.article h1{
+	background: url('../images/project-title.png') no-repeat;
+	background-size: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0 20px 0 30px;
+}
+.article h1 span{
+	float: right;
+	color: #5f80a2;
+	font-size: 14px;
+	font-weight: normal;
+}
+.article .article-article h3,
+.article .article-article p{
+	line-height: 2;
+	font-size: 14px;
+	color: #666;
+	text-indent: 2em;
+}
+.article .article-article h3{
+	padding-top: 30px;
+}
+.main.arab .main-header,
+.main.arab .article .article-article h3,
+.main.arab .article .article-article p{
+	text-align: right;
+}

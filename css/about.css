@@ -1,0 +1,20 @@
+.main-contetn-img{
+	padding: 0 50px;
+}
+.main-contetn-img img{
+    width: 100%;
+}
+.main .main-content .article{
+	padding: 0 50px 90px 50px;
+}
+.main .main-content .article p{
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+    padding-top: 20px;
+    text-indent: 2em; 
+}
+
+.main.arab{
+    text-align: right;
+}

@@ -1,0 +1,21 @@
+.main-contant{
+	padding: 20px;
+}
+.main-contant li{
+	float: left;
+	width: 16%;
+	margin-right: 5%;
+	margin-bottom: 30px;
+}
+.main-contant li:nth-child(5n){
+	margin-right: 0;
+}
+.main-contant li img{
+	width: 100%;
+}
+.main-contant li p{
+	margin-top: 10px;
+}
+.header .nav ul li{
+	margin-right: 114px;
+}

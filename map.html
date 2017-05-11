@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>时间轴_中国民俗特色资源 - 中国年画详情</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="head clearfix">
+            <div class="logo">
+                <img src="images/logo.png" width="148">
+            </div>
+            <div class="logo">
+                <img src="images/head-content.png" width="209">
+            </div>
+            <div class="logo">
+                <img src="images/logo-arab.png" width="146">
+            </div>
+        </div>
+        <div class="language">
+            <ul class="clearfix">
+                <li class="on"><a href="">中</a></li>
+                <li><a href="">الصينية</a></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="index.html">首页丨 الصفحة الرئيسية</a></li>
+                <li><a href="time-fwzwhyc.html">时间轴丨 الخط الزمني</a></li>
+                <li class="on"><a href="map.html">地图丨 الخريطة</a></li>
+                <li><a href="zt.html">专题丨 الموضوعات الخاصة</a></li>
+                <li><a href="news-list.html">图书馆新闻丨 أخبار المكتبة</a></li>
+                <li><a href="netadress.html">成员图书馆网址丨 المواقع الإ</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="map"></div>
+        <footer>
+            <div class="nav-footer">
+                <ul class="clearfix">
+                    <li><a href="project-description.html">项目介绍 丨 التعريف بالمشروع</a></li>
+                    <li><a href="about-us.html">关于我们 丨 تعرف بنا </a></li>
+                    <li><a href="netadress.html">外部网址 丨 المواقع الخارجية ذات الصلة</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span>京ICP备05014420号 </span>
+                <span>中国国家图书馆版权所有 丨 © جميع الحقوق محفوظة لدى المكتبة الوطنية الصينية</span>
+            </div>
+        </footer>
+    </section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+    <script type="text/javascript" src="js/geojson.json"></script>
+    <script type="text/javascript">
+    	$('#map').css({
+    		'width': '100%',
+    		<!-- 'height': ($(window).height() - ($('header').height() + $('footer').height() + 130)) + 'px', -->
+			'height': '830px',
+    		'overflow': 'hidden'
+    	})
+    	setTimeout(function(){
+    		/*map for leaflet*/
+			var cities = new L.LayerGroup();
+
+		    var mbAttr = '中国国家图书馆&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> ',
+		        mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+		    var streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
+		    var map = L.map('map', {
+		        center: [37.61,104.54],
+		        maxZoom: 6,
+				minZoom:4,
+				zoom:4,
+		        layers: [streets, cities]
+		    });
+		    
+		  
+			//比例尺
+			L.control.scale().addTo(map);
+
+			//禁止移动和放大缩小开始 
+			/*map.dragging.disable();  
+			  
+			map.touchZoom.disable();  
+			  
+			map.doubleClickZoom.disable();  
+			  
+			map.scrollWheelZoom.disable();*/  
+			////禁止移动和放大缩小结束 
+
+			for (var i = 0; i < data.features.length; i++) {
+			    var lat = data.features[i].geometry.coordinates[0];
+			    var lon = data.features[i].geometry.coordinates[1];
+			    var name = data.features[i].properties.name;
+			    var str = '';
+			    var item = data.features[i].properties.items;
+			    for(var j=0;j<data.features[i].properties.itemCount;j++){
+			        str += '<li class="clearfix"><img src="images/map.jpg"><div><h3>' + item[j][1] + '</h3><h4>战国<span>|</spa>吕不韦</h4><p>中国-陕西省</p></div></li>'
+			    }
+			    console.log(data.features[i].properties.itemCount)
+			    var myIcon = L.divIcon({
+			        className: 'my-div-icon',
+			        html: data.features[i].properties.itemCount,
+			        popupAnchor: [190,230]
+			    });
+			    L.marker([lon, lat], { icon: myIcon }).addTo(map)
+			        .bindPopup('<ul class="mapul">'+str+'</ul>');
+			}
+    	},0)
+    </script>
+</html>

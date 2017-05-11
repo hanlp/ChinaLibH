@@ -1,0 +1,146 @@
+html,body{
+	background: #fff;
+}
+.main{
+	box-shadow: none;
+}
+.main .main-header{
+	border: none;
+}
+.main .main-content{
+	padding: 10px 30px 50px 30px;
+}
+.video-info{
+	padding: 10px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+}
+.video-info .video-img{
+	width: 458px;
+	height: 267px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 0;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+}
+.video-info .video-img .fd{
+	background: #96cb61;
+	width: 93px;
+	height: 37px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 37px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	position: absolute;
+	bottom: 20px;
+	left: 24px;
+	cursor: pointer;
+}
+.video-info .video-text{
+	overflow: hidden;
+	height: 267px;
+	color: #666;
+	padding: 20px;
+	background: #e8edf0;
+}
+.video-info .video-text h3{
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.video-content li{
+	background: #fff;
+	border: solid 1px #acb8d5;
+	position: relative;
+	height: 58px;
+	line-height: 58px;
+	overflow: hidden;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 23px;
+	padding: 0 20px;
+}
+.video-content li:before{
+	content: '';
+	display: block;
+	width: 5px;
+	height: 58px;
+	background: #acb8d5;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.video-content li span:first-child{
+	font-weight: bold;
+	font-size: 16px;
+	color: #666;
+}
+.video-content li em{
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	color: #666;
+	padding: 0 10px;
+}
+.video-content.abra{
+	text-align: right;
+}
+.textthree{
+	letter-spacing: 5px;
+}
+.texttwo{
+	letter-spacing: 16px;
+}
+.blue{
+	color: #426f99;
+}
+
+.mark{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+.mark-content{
+	box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	font-size: 0;
+}
+.close{
+	width: 30px;
+	height: 30px;
+	background: #c2c2c2;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 35px;
+	font-weight: 100;
+	cursor: pointer;
+}
